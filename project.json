@@ -1,10 +1,11 @@
 {
-  "name": "estimate_for_Office_Goods2",
+  "name": "estimate_for_Office_Goods",
   "projectId": "3209b428-016f-4355-be44-2c65921d6a2f",
   "description": "Robotic Enterprise Framework",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.22.2]",
+    "UiPath.Mail.Activities": "[1.21.1]",
     "UiPath.System.Activities": "[23.10.1]",
     "UiPath.Testing.Activities": "[23.10.0]",
     "UiPath.UIAutomation.Activities": "[23.10.1]"
