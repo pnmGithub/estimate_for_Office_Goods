@@ -1,4 +1,6 @@
-### Documentation is included in the Documentation folder ###
+### [오피스디포견적서메일발송]  ###
+> - 견적서 발급 요청 메일에 첨부된 파일을 읽어 물품의 견적서를 작성하여 메일보내기
+> - REFramework로 구현 (QueueItem이 아닌 DataTable 이용)
 
 
 ### REFrameWork Template ###
