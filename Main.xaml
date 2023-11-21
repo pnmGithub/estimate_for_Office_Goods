@@ -210,7 +210,7 @@
       </State.Entry>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">294.33333333333303,282.33333333333303</av:Point>
+          <av:Point x:Key="ShapeLocation">294.33333333333303,262.33333333333303</av:Point>
           <av:Size x:Key="ShapeSize">432.8,156</av:Size>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
           <x:Double x:Key="StateContainerWidth">399.2</x:Double>
@@ -222,7 +222,7 @@
         <Transition DisplayName="New Transaction" sap:VirtualizedContainerService.HintSize="430,796" sap2010:WorkflowViewState.IdRef="Transition_6">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:PointCollection x:Key="ConnectorLocation">510.733333333333,438.33333333333303 510.733333333333,468.33333333333303 513.133333333333,468.33333333333303 513.133333333333,490.666666666667</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">510.733333333333,418.33333333333303 510.733333333333,448.33333333333303 513.133333333333,448.33333333333303 513.133333333333,480.666666666667</av:PointCollection>
               <x:Int32 x:Key="SrcConnectionPointIndex">39</x:Int32>
               <x:Int32 x:Key="DestConnectionPointIndex">38</x:Int32>
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -433,7 +433,7 @@
               </State.Entry>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">294.33333333333303,490.666666666667</av:Point>
+                  <av:Point x:Key="ShapeLocation">294.33333333333303,480.666666666667</av:Point>
                   <av:Size x:Key="ShapeSize">437.6,188.8</av:Size>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   <x:Double x:Key="StateContainerWidth">404.00000000000006</x:Double>
@@ -445,7 +445,7 @@
                 <Transition DisplayName="System Exception" sap:VirtualizedContainerService.HintSize="451.333333333333,521.333333333333" sap2010:WorkflowViewState.IdRef="Transition_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:PointCollection x:Key="ConnectorLocation">425.61333333333306,679.466666666667 425.61333333333306,709.28 754.4000000000001,709.28 754.4000000000001,109.28 724.4000000000001,109.28</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">425.61333333333306,669.466666666667 425.61333333333306,699.466666666667 754.4000000000001,699.466666666667 754.4000000000001,109.28 724.4000000000001,109.28</av:PointCollection>
                       <x:Int32 x:Key="SrcConnectionPointIndex">23</x:Int32>
                       <x:Int32 x:Key="DestConnectionPointIndex">40</x:Int32>
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -453,7 +453,7 @@
                   </sap:WorkflowViewStateService.ViewState>
                   <Transition.Condition>[SystemException IsNot Nothing]</Transition.Condition>
                   <Transition.To>
-                    <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="[정보 초기화 영역]&#xA;1. Config.xlsx 세팅&#xA;2. 브라우저 강제 종료&#xA;3. 아웃룩 메일 읽기 (제목 &quot;견적서&quot;, 첨부파일 있음 으로 필터)&#xA; 3-1. 견적서요청 메일 정보 TransactionData에 저장&#xA; 3-2. 견적서 요청(작업지시서) 엑셀파일 저장&#xA;4. 오피스디포 브라우저 오픈" DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="432.8,185.6" sap2010:WorkflowViewState.IdRef="State_2">
+                    <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="[정보 초기화 영역]&#xA;1. Config.xlsx 세팅&#xA;2. 브라우저 강제 종료&#xA;3. 아웃룩 메일 읽기 (제목 &quot;견적서&quot;, 첨부파일 있음 으로 필터)&#xA; 3-1. 견적서요청 메일 정보 TransactionData에 저장&#xA; 3-2. 견적서 요청(작업지시서) 엑셀파일 저장&#xA;4. 오피스디포 브라우저 오픈" DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="577.6,3050.4" sap2010:WorkflowViewState.IdRef="State_2">
                       <State.Entry>
                         <TryCatch DisplayName="Try initializing settings and applications" sap:VirtualizedContainerService.HintSize="532.8,2537.6" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                           <sap:WorkflowViewStateService.ViewState>
@@ -638,7 +638,7 @@
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Int32 x:Key="SrcConnectionPointIndex">39</x:Int32>
                               <x:Int32 x:Key="DestConnectionPointIndex">38</x:Int32>
-                              <av:PointCollection x:Key="ConnectorLocation">508,192.8 508,222.8 510.733333333333,222.8 510.733333333333,282.33333333333303</av:PointCollection>
+                              <av:PointCollection x:Key="ConnectorLocation">508,192.8 508,222.8 510.733333333333,222.8 510.733333333333,262.33333333333303</av:PointCollection>
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
@@ -653,7 +653,7 @@
                         <Transition DisplayName="System Exception (failed initialization)" sap:VirtualizedContainerService.HintSize="448.8,802.4" sap2010:WorkflowViewState.IdRef="Transition_3">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:PointCollection x:Key="ConnectorLocation">508.40000000000003,192.8 508.40000000000003,222.8 137.16000000000003,222.8 137.16000000000003,308</av:PointCollection>
+                              <av:PointCollection x:Key="ConnectorLocation">508,192.8 508,222.8 137.16000000000003,222.8 137.16000000000003,288</av:PointCollection>
                               <x:Int32 x:Key="SrcConnectionPointIndex">39</x:Int32>
                               <x:Int32 x:Key="DestConnectionPointIndex">34</x:Int32>
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -715,7 +715,7 @@
                               </State.Entry>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <av:Point x:Key="ShapeLocation">18,308</av:Point>
+                                  <av:Point x:Key="ShapeLocation">18,288</av:Point>
                                   <av:Size x:Key="ShapeSize">264.8,123.2</av:Size>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   <x:Double x:Key="StateContainerWidth">231.19999999999996</x:Double>
@@ -737,7 +737,7 @@
                 <Transition sap2010:Annotation.AnnotationText="Business Rule Exception" DisplayName="Business Exception" sap:VirtualizedContainerService.HintSize="448.8,537.6" sap2010:WorkflowViewState.IdRef="Transition_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:PointCollection x:Key="ConnectorLocation">535.0133333333331,679.466666666667 535.0133333333331,709.4666666666669 757.133333333333,709.4666666666669 757.133333333333,329.13333333333304 727.133333333333,329.13333333333304</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">535.0133333333331,669.466666666667 535.0133333333331,699.133333333333 757.133333333333,699.133333333333 757.133333333333,309.13333333333304 727.133333333333,309.13333333333304</av:PointCollection>
                       <x:Int32 x:Key="SrcConnectionPointIndex">43</x:Int32>
                       <x:Int32 x:Key="DestConnectionPointIndex">20</x:Int32>
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -752,7 +752,7 @@
                 <Transition sap2010:Annotation.AnnotationText="There is no need for any action in case of successful transaction.&#xA;The process should simply go to next transaction." DisplayName="Success" sap:VirtualizedContainerService.HintSize="452,553.6" sap2010:WorkflowViewState.IdRef="Transition_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:PointCollection x:Key="ConnectorLocation">622.5333333333331,679.466666666667 622.5333333333331,691.5333333333331 757.133333333333,691.5333333333331 757.133333333333,391.5333333333331 727.133333333333,391.5333333333331</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">622.5333333333331,669.466666666667 622.5333333333331,699.466666666667 757.133333333333,699.466666666667 757.133333333333,371.5333333333331 727.133333333333,371.5333333333331</av:PointCollection>
                       <x:Int32 x:Key="SrcConnectionPointIndex">59</x:Int32>
                       <x:Int32 x:Key="DestConnectionPointIndex">52</x:Int32>
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -775,7 +775,7 @@
         <Transition sap2010:Annotation.AnnotationText="This is a simple mecanism to stop the process.&#xA;In reallife scenario you can stop the process when there is no more data to process or on a schedule." DisplayName="No Data" sap:VirtualizedContainerService.HintSize="429.6,969.6" sap2010:WorkflowViewState.IdRef="Transition_7">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:PointCollection x:Key="ConnectorLocation">510.733333333333,438.33333333333303 510.733333333333,468.33333333333303 150.4,468.33333333333303 150.4,431.2</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">510.733333333333,418.33333333333303 510.733333333333,448.33333333333303 150.4,448.33333333333303 150.4,411.2</av:PointCollection>
               <x:Int32 x:Key="SrcConnectionPointIndex">39</x:Int32>
               <x:Int32 x:Key="DestConnectionPointIndex">39</x:Int32>
               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
