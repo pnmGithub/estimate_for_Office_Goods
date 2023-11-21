@@ -1,7 +1,7 @@
 ## [사무용품 견적서 메일발송]  ##
 > 견적서 발급 요청 메일의 첨부파일에 적힌 물품의 견적서를 작성하여 메일보내기   
 > REFramework로 구현 (QueueItem이 아닌 **DataTable.DataRow** 이용)   
-> 견적서 발급 요청 메일이 하나 이상임
+> 견적서 발급 요청 메일이 하나 이상임   
 > **TransactionData = 메일리스트의 [mailIndex], [mailSubject], [mailAttachmentName], [mailRequestDate]**
 
 
