@@ -179,8 +179,6 @@
       "Path": "Framework/CreateFolderFile.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "arrPath&Sequence_1",
-        "tmpFullPath&Sequence_1",
         "isPathExists&Sequence_1",
         "pathIdx&Sequence_3"
       ],
