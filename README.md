@@ -31,7 +31,7 @@
 * Framework\GetDateFromString.xaml - 문자열에서 날짜부분 가져오기 (20231121_GetDateFromString.xaml 에서 20231121만 추출)
 
 
-### How It Works ###
+### [How It Works] ###
 
 1. **INITIALIZE PROCESS**
    + Config.xlsx 세팅
