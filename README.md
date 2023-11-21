@@ -1,39 +1,63 @@
-### Documentation is included in the Documentation folder ###
+### [사무용품 견적서 메일발송]  ###
+> 견적서 발급 요청 메일의 첨부파일에 적힌 물품의 견적서를 작성하여 메일보내기
+> REFramework로 구현 (QueueItem이 아닌 DataTable 이용)
+> 견적서 발급 요청 메일이 하나 이상임
 
 
-### REFrameWork Template ###
-**Robotic Enterprise Framework**
+#### [작업순서] ####
+> _이해를 돕기위한 작업가이드.xlsx 파일 참고
+1. 아웃룩 메일 가져오기 (TransactionData에 입력 - [mailIndex], [mailSubject], [mailAttachmentName], [mailRequestDate])
+2. 사무용품 사이트(오피스디포) 접속
+3. 작업지시서 읽어서 물품코드 검색, 물품의 수량을 작업지시서 대로 입력, 장바구니에 담기
+4. 장바구니 페이지에서 견적서 PDF로 저장
+5. 견적서 첨부하여 메일 발송. 원본 메일 폴더 이동
 
-* Built on top of *Transactional Business Process* template
-* Uses *State Machine* layout for the phases of automation project
-* Offers high level logging, exception handling and recovery
-* Keeps external settings in *Config.xlsx* file and Orchestrator assets
-* Pulls credentials from Orchestrator assets and *Windows Credential Manager*
-* Gets transaction data from Orchestrator queue and updates back status
-* Takes screenshots in case of system exceptions
+
+#### [Config.xlsx 참고] ####
+* strURL - 오피스디포 사이트 URL
+* strOutlookAccount - 아웃룩 메일 계정
+* strOutlookFolder - 아웃룩 메일가져올 폴더 
+* strOutlookMoveFolder - 아웃룩 메일 폴더 - 처리 완료된 메일 이동 폴더
+* strToMailAccount - 견적서 받을 메일주소
+* strMailSaveFolder - 작업지시서 다운로드 경로
+* strMailSubject - 견적서 보낼 메일 제목
+* strMailBody - 견적서 보낼 메일 내용
+* strPDFFileName - 견적서 pdf 파일명
+* strSaveFolderPath - 파일 저장경로
+
+  
+#### [Config.xlsx 참고] ####
+* Framework\CreateFolderFile.xaml - 폴더, 파일 처리. 폴더 있으면 삭제 후 생성, 없으면 생성. 파일 있으면 삭제
+* Framework\GetDateFromString.xaml - 문자열에서 날짜부분 가져오기 (20231121_GetDateFromString.xaml 에서 20231121만 추출)
 
 
 ### How It Works ###
 
 1. **INITIALIZE PROCESS**
- + ./Framework/*InitiAllSettings* - Load configuration data from Config.xlsx file and from assets
- + ./Framework/*GetAppCredential* - Retrieve credentials from Orchestrator assets or local Windows Credential Manager
- + ./Framework/*InitiAllApplications* - Open and login to applications used throughout the process
+   + Config.xlsx 세팅
+   + 브라우저 강제 종료
+   + 아웃룩 메일 읽기 (제목 "견적서", 첨부파일 있음 으로 필터)
+      1. 견적서요청 메일 정보 TransactionData에 저장
+      2. 견적서 요청(작업지시서) 엑셀파일 저장
+   + 오피스디포 브라우저 오픈
 
 2. **GET TRANSACTION DATA**
- + ./Framework/*GetTransactionData* - Fetches transactions from an Orchestrator queue defined by Config("OrchestratorQueueName") or any other configured data source
+   + Get transaction item 비활성
+   + TransactionNumber가 DataTable Row 수만큼 반복을 위한 처리 -  TransactionData의 Row 갯수 체크해서 TransactionItem에 현재 Row 정보 할당
 
-3. **PROCESS TRANSACTION**
- + *Process* - Process trasaction and invoke other workflows related to the process being automated 
- + ./Framework/*SetTransactionStatus* - Updates the status of the processed transaction (Orchestrator transactions by default): Success, Business Rule Exception or System Exception
+4. **PROCESS TRANSACTION**
+   + 저장된 작업지시서.xlsx 파일 읽기. DataTable에 저장
+   + DataTable 반복하면서
+     1. 오피스디포 사이트에서 물품코드 검색
+     2. 상세페이지에서 수량입력, 장바구니에 담기 클릭
+   + 장바구니 클릭, 상품 전체선택 후 pdf 저장. 장바구니 비우기
+   + pdf 첨부하여 메일발송. 견적서 발송 완료 메일 폴더 이동
 
 4. **END PROCESS**
- + ./Framework/*CloseAllApplications* - Logs out and closes applications used throughout the process
+   + 브라우저 닫기
+   + 브라우저 강제 종료
 
 
-### For New Project ###
 
-1. Check the Config.xlsx file and add/customize any required fields and values
-2. Implement InitiAllApplications.xaml and CloseAllApplicatoins.xaml workflows, linking them in the Config.xlsx fields
-3. Implement GetTransactionData.xaml and SetTransactionStatus.xaml according to the transaction type being used (Orchestrator queues by default)
-4. Implement Process.xaml workflow and invoke other workflows related to the process being automated
+### REFrameWork Template ###
+**Robotic Enterprise Framework**
