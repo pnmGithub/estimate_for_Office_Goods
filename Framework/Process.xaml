@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>597.6,2108</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1165.6,5375.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -115,7 +115,7 @@
       <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="608,2043.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1176,5310.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_searchProduct" />
       <Variable x:TypeArguments="x:String" Default="0" Name="strCartCnt" />
@@ -131,21 +131,21 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="545.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
-    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="545.6,56" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Process - Attach Browser" sap:VirtualizedContainerService.HintSize="545.6,1576.8" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="4994adc1f6fa12d8fb37af5bd4d2340c" Selector="&lt;html app='chrome.exe' title='오피스디포 공식쇼핑몰' /&gt;">
+    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="1113.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
+    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="1113.6,56" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Process - Attach Browser" sap:VirtualizedContainerService.HintSize="1113.6,4844" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="4994adc1f6fa12d8fb37af5bd4d2340c" Selector="&lt;html app='chrome.exe' title='오피스디포 공식쇼핑몰' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1429.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1080,4696.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Sequence - 작업지시서 엑셀 읽기" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence DisplayName="Sequence - 작업지시서 엑셀 읽기" sap:VirtualizedContainerService.HintSize="1017.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -180,7 +180,7 @@
                 </ui:ExcelApplicationScope.Body>
               </ui:ExcelApplicationScope>
             </Sequence>
-            <Sequence sap2010:Annotation.AnnotationText="장바구니에 담긴것이 있으면..(pdf 저장 후 장바구니 전체삭제 함. 이 영역은 다시한번 확인용&#xA;1. 장바구니로 이동&#xA;2. 전체선택&#xA;3. 삭제하기" DisplayName="Sequence - 장바구니 비우기" sap:VirtualizedContainerService.HintSize="449.6,175.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence sap2010:Annotation.AnnotationText="장바구니에 담긴것이 있으면..(pdf 저장 후 장바구니 전체삭제 함. 이 영역은 다시한번 확인용&#xA;1. 장바구니로 이동&#xA;2. 전체선택&#xA;3. 삭제하기" DisplayName="Sequence - 장바구니 비우기" sap:VirtualizedContainerService.HintSize="1017.6,175.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -319,26 +319,26 @@
                 </If.Else>
               </If>
             </Sequence>
-            <Sequence DisplayName="Sequence - 검색, 수량입력, 장바구니에 담기" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <Sequence DisplayName="Sequence - 검색, 수량입력, 장바구니에 담기" sap:VirtualizedContainerService.HintSize="1017.6,3350.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_searchProduct]" DisplayName="For Each Row in dt_searchProduct" sap:VirtualizedContainerService.HintSize="955.2,3116.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_searchProduct]" DisplayName="For Each Row in dt_searchProduct" sap:VirtualizedContainerService.HintSize="955.2,3117.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="productRow" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="921.6,2928.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="921.6,2929.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign sap:VirtualizedContainerService.HintSize="878.4,80.8" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign sap:VirtualizedContainerService.HintSize="878.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[strProductCode]</OutArgument>
                         </Assign.To>
@@ -448,7 +448,7 @@
                                 </ui:Target>
                               </ui:SendHotkey.Target>
                             </ui:SendHotkey>
-                            <ui:UiElementExists DisplayName="Element Exists 'TABLE'" Exists="[isProductListChk]" sap:VirtualizedContainerService.HintSize="801.6,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                            <ui:UiElementExists DisplayName="Element Exists  - 옵션 선택 테이블 찾기" Exists="[isProductListChk]" sap:VirtualizedContainerService.HintSize="801.6,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
                               <ui:UiElementExists.Target>
                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b3da44b6-0669-46e1-b080-75303bc7ad8d" InformativeScreenshot="f8f32bb1b718f913b147ba4987ea5d80" Selector="&lt;webctrl tag='dd' parentclass='option_list' /&gt;" TimeoutMS="2000">
                                   <ui:Target.WaitForReady>
@@ -601,7 +601,7 @@
               </ui:ForEachRow>
               <ui:ClearDataTable DataTable="[dt_searchProduct]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="955.2,80.8" sap2010:WorkflowViewState.IdRef="ClearDataTable_1" />
             </Sequence>
-            <Sequence sap2010:Annotation.AnnotationText="PDF 저장 후 장바구니 비우기" DisplayName="Sequence - 장바구니, pdf 저장" sap:VirtualizedContainerService.HintSize="496,1988" sap2010:WorkflowViewState.IdRef="Sequence_25">
+            <Sequence sap2010:Annotation.AnnotationText="PDF 저장 후 장바구니 비우기" DisplayName="Sequence - 장바구니, pdf 저장" sap:VirtualizedContainerService.HintSize="1017.6,114.4" sap2010:WorkflowViewState.IdRef="Sequence_25">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -824,7 +824,7 @@
                 </ui:Click.Target>
               </ui:Click>
             </Sequence>
-            <Sequence sap2010:Annotation.AnnotationText="견적서 처리 후 요청메일 폴더 이동" DisplayName="Sequence - pdf 포함하여 아웃룩 메일발송" sap:VirtualizedContainerService.HintSize="449.6,701.6" sap2010:WorkflowViewState.IdRef="Sequence_26">
+            <Sequence sap2010:Annotation.AnnotationText="견적서 처리 후 요청메일 폴더 이동" DisplayName="Sequence - pdf 포함하여 아웃룩 메일발송" sap:VirtualizedContainerService.HintSize="1017.6,701.6" sap2010:WorkflowViewState.IdRef="Sequence_26">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
