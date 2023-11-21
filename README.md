@@ -1,7 +1,7 @@
-### [사무용품 견적서 메일발송]  ###
-> 견적서 발급 요청 메일의 첨부파일에 적힌 물품의 견적서를 작성하여 메일보내기
-> REFramework로 구현 (QueueItem이 아닌 DataTable 이용)
-> 견적서 발급 요청 메일이 하나 이상임
+## [사무용품 견적서 메일발송]  ##
+> 견적서 발급 요청 메일의 첨부파일에 적힌 물품의 견적서를 작성하여 메일보내기   
+> REFramework로 구현 (QueueItem이 아닌 DataTable 이용)   
+> 견적서 발급 요청 메일이 하나 이상임   
 
 
 #### [작업순서] ####
@@ -26,12 +26,12 @@
 * strSaveFolderPath - 파일 저장경로
 
   
-#### [Config.xlsx 참고] ####
+#### [추가된 파일(Invoke) 정보] ####
 * Framework\CreateFolderFile.xaml - 폴더, 파일 처리. 폴더 있으면 삭제 후 생성, 없으면 생성. 파일 있으면 삭제
 * Framework\GetDateFromString.xaml - 문자열에서 날짜부분 가져오기 (20231121_GetDateFromString.xaml 에서 20231121만 추출)
 
 
-### How It Works ###
+#### [How It Works] ####
 
 1. **INITIALIZE PROCESS**
    + Config.xlsx 세팅
@@ -57,7 +57,9 @@
    + 브라우저 닫기
    + 브라우저 강제 종료
 
-
+* * *
+![estimate_for_Office_Goods_guide](https://github.com/pnmGithub/estimate_for_Office_Goods.RPA-uipath/assets/149296871/f0721054-4ca0-4ca0-a80e-39d6174e0e50)
+* * *
 
 ### REFrameWork Template ###
 **Robotic Enterprise Framework**
