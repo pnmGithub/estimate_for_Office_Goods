@@ -26,7 +26,7 @@
 * strSaveFolderPath - 파일 저장경로
 
   
-#### [Config.xlsx 참고] ####
+#### [추가된 파일(Invoke) 정보] ####
 * Framework\CreateFolderFile.xaml - 폴더, 파일 처리. 폴더 있으면 삭제 후 생성, 없으면 생성. 파일 있으면 삭제
 * Framework\GetDateFromString.xaml - 문자열에서 날짜부분 가져오기 (20231121_GetDateFromString.xaml 에서 20231121만 추출)
 
